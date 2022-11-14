@@ -1,4 +1,4 @@
-console.log("Witaj");
+console.log("Witaj przybyszu");
 
 let button = document.querySelector(".js-articleButton");
 let headerElement = document.querySelector(".js-header");
