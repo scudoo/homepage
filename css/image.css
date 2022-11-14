@@ -1,0 +1,10 @@
+.section__dualImage {
+    margin: 0 auto;
+    display: block;
+
+}
+
+.section__singleImage {
+    margin: 5px auto;
+    display: block;
+}

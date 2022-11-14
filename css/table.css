@@ -1,0 +1,29 @@
+.section__tableContainer {
+    overflow-x: auto;
+}
+
+.section__table {
+    margin: 0 auto;
+    background-color: #e2e9f0d5;
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+    box-shadow: 13px 13px 28px -4px #000000;
+}
+
+.table--dark {
+    background-color: #222424;
+}
+
+.section__tableCell {
+    border-bottom: 1px black solid;
+    padding: 3px;
+    text-align: center;
+}
+
+.section__tableHeader {
+    border-bottom: 1px black solid;
+    color: white;
+    background-color: #353536;
+    padding: 3px;
+    text-align: center;
+}

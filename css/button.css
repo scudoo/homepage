@@ -1,0 +1,48 @@
+.article__button {
+    float: right;
+    margin: 10px 5px;
+    box-shadow: 3px 3px 6px -5px #000000;
+}
+
+.article__button:hover {
+    cursor: pointer;
+}
+
+.header__button--red {
+    background-color: rgb(255, 0, 0, 0.377);
+    color: white;
+    border-color: rgb(255, 0, 0, 0.377);
+    box-shadow: 6px 6px 9px -4px rgb(255, 0, 0, 0.377);
+}
+
+.header__button--red:hover {
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.5);
+    box-shadow: 6px 6px 9px -4px rgb(255, 0, 0, 0.5);
+}
+
+.header__button--green {
+    background-color: rgb(0, 128, 0, 0.377);
+    border-color: rgb(0, 128, 0, 0.377);
+    color: white;
+    box-shadow: 6px 6px 9px -4px rgb(0, 128, 0, 0.377);
+}
+
+.header__button--green:hover {
+    cursor: pointer;
+    background-color: rgb(0, 128, 0, 0.5);
+    box-shadow: 6px 6px 9px -4px rgb(0, 128, 0, 0.5);
+}
+
+.header__button--blue {
+    background-color: rgb(0, 0, 255, 0.377);
+    border-color: rgb(0, 0, 255, 0.377);
+    color: white;
+    box-shadow: 6px 6px 9px -4px rgb(0, 0, 255, 0.377);
+}
+
+.header__button--blue:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 255, 0.5);
+    box-shadow: 6px 6px 9px -4px rgb(0, 0, 255, 0.5);
+}

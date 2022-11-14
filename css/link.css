@@ -1,0 +1,75 @@
+.nav__linkMetro {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.nav__linkMetro:hover {
+    border-bottom: 1px black solid;
+}
+
+.linkMetro--dark {
+    color: white;
+}
+
+.linkMetro--dark:hover {
+    border-bottom: 1px white solid;
+}
+
+.nav__linkOsiedle {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.nav__linkOsiedle:hover {
+    border-bottom: 1px black solid;
+}
+
+.linkOsiedle--dark {
+    color: white;
+}
+
+.linkOsiedle--dark:hover {
+    border-bottom: 1px white solid;
+}
+
+.nav__linkSchrony {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.nav__linkSchrony:hover {
+    border-bottom: 1px black solid;
+}
+
+.linkSchrony--dark {
+    color: white;
+}
+
+.linkSchrony--dark:hover {
+    border-bottom: 1px white solid;
+}
+
+.nav__linkPustka {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.nav__linkPustka:hover {
+    border-bottom: 1px black solid;
+}
+
+.linkPustka--dark {
+    color: white;
+}
+
+.linkPustka--dark:hover {
+    border-bottom: 1px white solid;
+}
+
+.section__sourceLink {
+    color: rgb(0, 0, 0);
+}
+
+.sourceLink--dark {
+    color: white;
+}
