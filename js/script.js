@@ -1,23 +1,37 @@
-console.log("Witaj przybyszu");
+const welcome = () => {
+    console.log("Witaj przybyszu");
+}
 
-let button = document.querySelector(".js-articleButton");
-let headerElement = document.querySelector(".js-header");
-let body = document.querySelector("body");
-let header = document.querySelector(".header");
-let nav = document.querySelector(".nav");
-let article = document.querySelector(".article");
-let czerwony = document.querySelector(".js-headerButtonRed");
-let zielony = document.querySelector(".js-headerButtonGreen");
-let niebieski = document.querySelector(".js-headerButtonBlue");
-let table = document.querySelector(".js-sectionTable");
+const changeHeaderToRed = () => {
+    headerElement.classList.add("header__header--red");
+    headerElement.classList.remove("header__header--green");
+    headerElement.classList.remove("header__header--blue");
+}
 
-let linkMetro = document.querySelector(".js-linkMetro");
-let linkOsiedle = document.querySelector(".js-linkOsiedle");
-let linkSchrony = document.querySelector(".js-linkSchrony");
-let linkPustka = document.querySelector(".js-linkPustka");
-let sourceLink = document.querySelector(".js-sourceLink");
+const changeHeaderToGreen = () => {
+    headerElement.classList.add("header__header--green");
+    headerElement.classList.remove("header__header--red");
+    headerElement.classList.remove("header__header--blue");
+}
 
-button.addEventListener("click", () => {
+const changeHeaderToBlue = () => {
+    headerElement.classList.add("header__header--blue");
+    headerElement.classList.remove("header__header--red");
+    headerElement.classList.remove("header__header--green");
+}
+
+const toggleBackgroundTheme = () => {
+    const body = document.body;
+    const header = document.querySelector(".header");
+    const nav = document.querySelector(".nav");
+    const article = document.querySelector(".article");
+    const table = document.querySelector(".js-sectionTable");
+    const linkMetro = document.querySelector(".js-linkMetro");
+    const linkOsiedle = document.querySelector(".js-linkOsiedle");
+    const linkSchrony = document.querySelector(".js-linkSchrony");
+    const linkPustka = document.querySelector(".js-linkPustka");
+    const sourceLink = document.querySelector(".js-sourceLink");
+
     body.classList.toggle("body--dark");
     header.classList.toggle("header--dark");
     nav.classList.toggle("nav--dark");
@@ -31,22 +45,20 @@ button.addEventListener("click", () => {
     sourceLink.classList.toggle("sourceLink--dark");
 
     button.innerText = body.classList.contains("body--dark") ? "Jasny motyw" : "Ciemny motyw";
-});
+}
 
-czerwony.addEventListener("click", () => {
-    headerElement.classList.add("header__header--red");
-    headerElement.classList.remove("header__header--green");
-    headerElement.classList.remove("header__header--blue");
-});
+const buttonRed = document.querySelector(".js-headerButtonRed");
+buttonRed.addEventListener("click", changeHeaderToRed);
 
-zielony.addEventListener("click", () => {
-    headerElement.classList.add("header__header--green");
-    headerElement.classList.remove("header__header--red");
-    headerElement.classList.remove("header__header--blue");
-});
+const buttonGreen = document.querySelector(".js-headerButtonGreen");
+buttonGreen.addEventListener("click", changeHeaderToGreen);
 
-niebieski.addEventListener("click", () => {
-    headerElement.classList.add("header__header--blue");
-    headerElement.classList.remove("header__header--red");
-    headerElement.classList.remove("header__header--green");
-});
+const buttonBlue = document.querySelector(".js-headerButtonBlue");
+buttonBlue.addEventListener("click", changeHeaderToBlue);
+
+const button = document.querySelector(".js-articleButton");
+button.addEventListener("click", toggleBackgroundTheme);
+
+const headerElement = document.querySelector(".js-header");
+
+welcome();
