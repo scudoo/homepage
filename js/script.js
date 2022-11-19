@@ -1,4 +1,4 @@
-const welcome = () => {
+{const welcome = () => {
     console.log("Witaj przybyszu");
 }
 
@@ -61,4 +61,4 @@ button.addEventListener("click", toggleBackgroundTheme);
 
 const headerElement = document.querySelector(".js-header");
 
-welcome();
+welcome();}
